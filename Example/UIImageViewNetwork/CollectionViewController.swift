@@ -16,7 +16,7 @@ let ImageCollectionViewCellReuseableID : NSString = "ImageCollectionViewCellReus
 class CollectionViewController:UICollectionViewController, UICollectionViewDelegateFlowLayout {
 	let MinimumLineSpacing : CGFloat = 3.0
 	let MinimumInterItemSpacing : CGFloat = 3.0
-	let EdgeInset : UIEdgeInsets = UIEdgeInsetsMake(2, 2, 2, 2)
+	let EdgeInset : UIEdgeInsets = UIEdgeInsets.init(top: 2, left: 2, bottom: 2, right: 2)
     var imagesArray: [String] = []
 	var lastIchibaLoadedPage : NSInteger = 1
 	var alertControllersQueue : NSMutableArray? = NSMutableArray()
@@ -49,7 +49,7 @@ class CollectionViewController:UICollectionViewController, UICollectionViewDeleg
 		imageCollectionViewCell.imageView.errorImage = UIImage(named: "ErrorImage")
 		imageCollectionViewCell.imageView.setImageFromUrl(self.imagesArray[(indexPath as NSIndexPath).row] as NSString );
 		
-		imageCollectionViewCell.imageView.layer.borderColor = UIColor(colorLiteralRed: 0.99, green: 0.30, blue: 0.20, alpha: 1).cgColor
+		imageCollectionViewCell.imageView.layer.borderColor = UIColor(red: 0.99, green: 0.30, blue: 0.20, alpha: 1).cgColor
 		imageCollectionViewCell.imageView.layer.borderWidth = 0.5
 		
 		return cell

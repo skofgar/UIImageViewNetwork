@@ -111,7 +111,7 @@ extension UIImageView {
     */
     public func setImage(_ image : UIImage?, animated : Bool) {
         if (animated == true) {
-            UIView.transition(with: self, duration: 0.2, options: UIViewAnimationOptions.transitionCrossDissolve, animations: { () -> Void in
+            UIView.transition(with: self, duration: 0.2, options: UIView.AnimationOptions.transitionCrossDissolve, animations: { () -> Void in
                 self.image = image
                 }, completion: { (stop) -> Void in
             })
