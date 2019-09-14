@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "UIImageViewNetwork"
-  s.version          = "0.1.0"
+  s.version          = "0.4.2"
   s.summary          = "UIImageViewNetwork is Swift extension of UIImageView to download image from server asynchronously."
   s.description      = <<-DESC
 
