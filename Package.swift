@@ -13,7 +13,7 @@ let package = Package(
     targets: [
         .target(
             name: "UIImageViewNetwork",
-            path: "Source"
+            path: "UIImageViewNetwork/Classes"
         )
     ],
     swiftLanguageVersions: [.v4, .v4_2, .v5]
